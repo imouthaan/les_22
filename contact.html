@@ -12,27 +12,61 @@
 </head>
 
 <body>
-    <div class="container-xs">
-        <header class="xs-auto">
-            <div>
-                <nav class="nav nav-pills flex-column flex-sx-row">
-                    <a class="flex-sm-fill text-xs-center nav-link" href="index.html">Home</a>
-                    <a class="flex-sm-fill text-xs-center nav-link" href="overmij.html">Over mij</a>
-                    <a class="flex-sm-fill text-xs-center nav-link active" href="contact.html">Contact</a>
-                </nav>
-            </div>
+    <div class="container-sm p-0 ">
+        <header>
+            <nav class="navbar navbar-expand-lg  navbar-dark bg-primary">
+                <div class="container-fluid">
+
+                    <span class="navbar-brand mb-0 h1">Mijn pagina</span>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="overmij.html">Over mij</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </header>
-   <main>
-  
-   </main>
-
-   
-        <footer class="xs-auto text-white-50">
-        <div class="fixed-bottom bg-primary">
-            © 2024 idmouthaan "Alle rechten voorbehouden."
-        </div>
-
-    </footer>
+        <main class="my-4">
+            <form class="row g-3 d-block">
+                <div class="col-md-6">
+                    <label for="inputName" class="form-label">Naam</label>
+                    <input type="text" class="form-control" id="inputName">
+                </div>
+                <div class="col-md-12">
+                    <label for="inputEmail4" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="inputEmail">
+                </div>
+                <div class="col-12">
+                    <label for="Textaerea" class="form-label">Uw bericht</label>
+                    <textarea class="form-control" id="Textaerea" rows="3"></textarea>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+            </form>
+        </main>
+        <footer class="bg-primary text-center text-lg-start fixed-bottom ms-auto container-sm p-0">
+            <!-- Copyright -->
+            <div class="text-center p-3 text-white" style="background-color: rgba(0, 0, 0, 0.2);">
+                &copy; 2024 Copyright:
+                <a class="text-white" href="https://ikschrijfbeter.nl/">IDMouthaan</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
