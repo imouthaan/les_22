@@ -2,27 +2,20 @@ body {
     background-color: beige;
 }
 
-footer {
-    display: flex;
-    position: absolute;
-    bottom: auto;
-    min-height: 200px;
-    border: solid #333 1px;
-    text-align: left;
-    padding: 0.5rem;
-    background-color: #333333;
-    margin-top: 20rem;
-    width: 100%;
+/* Bootstrap override */
+.bg-primary {
+    background-color: mediumpurple !important;
 }
 
-footer p {
-    padding: 0.2rem 0.5rem;
-    font-size: 0.75rem;
-    text-align: left;
-    color: #fff;
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-    align-self: center;
+footer {
+    height: 200px;
+}
+
+main {
+    max-height: 80vh;
+    min-height: 75vh;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 @media (max-width: 576px) {
